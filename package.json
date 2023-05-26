@@ -1,0 +1,31 @@
+{
+  "name": "certificado-workshop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@sparticuz/chromium-min": "^113.0.1",
+    "@types/node": "20.1.2",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "@vercel/og": "^0.5.4",
+    "chrome-aws-lambda": "^10.1.0",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.1",
+    "next": "^13.4.1",
+    "puppeteer-core": "20.1.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sonner": "^0.3.5",
+    "typescript": "^5.0.4",
+    "use-sound": "^4.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.62.1"
+  }
+}

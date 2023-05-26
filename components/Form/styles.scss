@@ -1,0 +1,96 @@
+form {
+  text-transform: lowercase;
+  
+  fieldset {
+    border: 0;
+  }
+
+  label {
+    display: block;
+    margin: 0 auto 36px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .input {
+    background: var(--gradient);
+    border: 0;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 8px;
+    padding: 1px;
+    width: 100%;
+    max-width: 560px;
+
+    .bg {
+      background: var(--background);
+      border-radius: 8px;
+    }
+  }
+
+  input {
+    background: none;
+    border: 0;
+    outline: 0;
+    color: #ddd;
+    font-size: 20px;
+    font-family: var(--font-outfit);
+    padding: 14px 198px 14px 18px;
+    width: 100%;
+  }
+
+  ::placeholder {
+    color: #ddd;
+  }
+
+  button {
+    background: var(--highlight);
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-transform: lowercase;
+    font-size: 18px;
+    padding: 10px 16px;
+    position: absolute;
+    top: 7px;
+    right: 6px;
+    transition: all .1s linear;
+
+    &:hover {
+      background: #993281;
+    }
+
+    .loading {
+      background: url(/loading.svg) no-repeat;
+      display: block;
+      width: 16px;
+      height: 16px;
+      text-indent: -9999px;
+      margin-right: 8px;
+    }
+
+    &:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+      color: #333;
+    }
+  }
+
+  .text-tip {
+    color: #908AC5;
+    display: block;
+  }
+}
+
+.text-preview {
+  font: 700 55px Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+  letter-spacing: -0.5px;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
