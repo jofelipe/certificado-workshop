@@ -10,12 +10,12 @@ export const config = {
   runtime: 'edge',
 };
 
-const Inter = fetch(
-  new URL('../../assets/fonts/Inter.ttf', import.meta.url)
-).then((res) => res.arrayBuffer());
+const Inter = fetch(new URL('../assets/fonts/Inter.ttf', import.meta.url)).then(
+  (res) => res.arrayBuffer()
+);
 
 const SourceCodePro = fetch(
-  new URL('../../assets/fonts/SourceCodePro.ttf', import.meta.url)
+  new URL('../assets/fonts/SourceCodePro.ttf', import.meta.url)
 ).then((res) => res.arrayBuffer());
 
 const fullWidth = {
