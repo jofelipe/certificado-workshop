@@ -65,9 +65,7 @@ export default function Form() {
   const certificate = useCallback(async () => {
     const nameSize = textPreviewRef.current?.clientWidth || 0;
 
-    const response = await fetch(
-      `${process.env.NEXT_PUBLIC_URL}/api/og?name=${form.name}&size=${nameSize}`
-    );
+    const response = await fetch(`/api/og?name=${form.name}&size=${nameSize}`);
 
     const image = await response.arrayBuffer();
     const url = window.URL.createObjectURL(new Blob([image]));
