@@ -93,4 +93,23 @@ form {
   visibility: hidden;
   height: 0;
   overflow: hidden;
+  position: absolute; // for mobile purpose
+  white-space: nowrap; // for mobile purpose
+}
+
+@media (max-width: 767px) {
+  .logo {
+    width: 300px;
+  }
+
+  form input {
+    padding: 14px;
+  }
+
+  form button {
+    position: static;
+    width: 100%;
+    justify-content: center;
+    border-radius: 0 0 8px 8px;
+  }
 }

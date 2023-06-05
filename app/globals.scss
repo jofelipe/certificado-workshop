@@ -55,3 +55,9 @@ main {
 main > section {
   position: absolute;
 }
+
+@media (max-width: 767px) {
+  main {
+    padding: 32px;
+  }
+}

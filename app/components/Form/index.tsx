@@ -28,7 +28,35 @@ export default function Form() {
     });
   };
 
-  const names = ['Jonathan Felipe'];
+  const names = [
+    'Jonathan Felipe',
+    'Renan Bonin',
+    'Alisson Goulart',
+    'Wanderson Silva',
+    'Rodolfo Guimarães Ferreira',
+    'Pâmella Trevisan',
+    'Paola Emily dos Reis',
+    'Guilherme Campos',
+    'Guilherme da Silva Nunes',
+    'Sarah Araujo da Silva',
+    'Raquel Campos',
+    'Lucas Alves de Souza Marques Timoteo',
+    'Leticia Franco',
+    'Felipe Gatti',
+    'Felipe Ferreira',
+    'Leandro Napoli',
+    'Rafael Cassita',
+    'Daniel Richard',
+    'Marcos Eduardo Degrossoli',
+    'Jairo Junior',
+    'Izauir Guilherme Bernardo dos Santos',
+    'Danilo da Silva Porfirio',
+    'Mateus José da Silva',
+    'Walter Magno',
+    'Carlos Batista',
+    'Leonardo Moreira',
+    'Natalia Maria Secco Souza',
+  ];
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
